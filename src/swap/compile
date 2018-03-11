@@ -1,0 +1,2 @@
+gcc main.c swap.c -o task1
+chmod +x task1

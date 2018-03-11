@@ -1,0 +1,53 @@
+  321  mkdir ./bin/din
+  322  gcc -c  -fPIC answer.c -o bin/din/answer.o
+  323  gcc -c  -fPIC add.c -o bin/din/add.o
+  325  ./bin/din/ ls -l
+  326  ./bin/din ls -l
+  328  cd ./bin/din
+  369  gcc -shared -Lstat -lStat -o din/libDin.so
+  370  gcc -shared din/add.o din/answer.o -o din/libDin1.so
+  372  cp din/libDin din/libDin
+  373  cp din/libDin din/libDin.so
+  374  cp din/libDin1.so din/libDin.so
+  375  rm din/libDin1.so
+  376  gcc main.o -Ldin -lDin  -o din/dLinked
+  378  ./din/dLinked
+  393  mkdir din
+  394  history | grep din || stat
+  395  history | grep [din || stat]
+  397  history | grep din >logs
+   75  git status
+  293  git status
+  298  git status
+  305  git statu
+  306  git status
+  316  gcc add.c -o bin/stat/add.o
+  317  mkdir ./bin/stat
+  318  gcc add.c -o bin/stat/add.o
+  319  gcc -c add.c -o bin/stat/add.o
+  320  gcc -c answer.c -o bin/stat/answer.o
+  333  ar rcs bin/stat/stat.a bin/stat/add.o bin/stat/answer.o
+  338  gcc bin/main.o -Lbin.stat -lstat -o bin/statLinced
+  339  gcc bin/main.o -Lbin/stat -lstat -o bin/statLinced
+  340  gcc bin/main.o -Lbin/stat -lstat.a -o bin/statLinced
+  341  gcc bin/main.o -Lbin/stat -lstat -o bin/statLinked
+  343  gcc bin/main.o -Lbin/stat -lstat -o bin/stLinked
+  344  gcc bin/main.o -Lbin/stat -lstat.a -o bin/stLinked
+  346  gcc main.o -Lstat -lstat.a -o stLinked
+  348  gcc main.o -lstat/stat.a -o stLinked
+  349  gcc main.o -Lstat stat.a -o stLinked
+  353  gcc main.o -Lstat -lstat.a -o stat/stLinked
+  354  cd ./stat
+  356  gcc main.o -Lstat -lStat.a -o stat/stLinked
+  358  gcc main.o -Lstat -lStat.a -o stat/stLinked
+  359  gcc main.o -Lstat -lStat -o stat/stLinked
+  360  cd ./stat
+  364  gcc -shared -Lstat -lStat-static -o libDin-shared.so
+  365  gcc -shared -Lstat -lStat -o libDin-shared.so
+  366  gcc -shared -Lstat -lStat -o libDin.so
+  369  gcc -shared -Lstat -lStat -o din/libDin.so
+  392  mkdir stat
+  394  history | grep din || stat
+  395  history | grep [din || stat]
+  396  history | grep stat
+  398  history | grep stat >>logs
